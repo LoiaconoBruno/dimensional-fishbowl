@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La pecera dimensional</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .dos { display: grid; gap: 16px; grid-template-columns: 1fr 1fr; }
+    @media (max-width: 760px) { .dos { grid-template-columns: 1fr; } }
+    h2 .sub { font-weight: 400; color: var(--muted); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <h1>La pecera dimensional</h1>
+    <p>Si viviéramos en una pecera dentro de una dimensión que no vemos, ¿cómo podríamos deducirla desde adentro? Dos pistas que un ser de Planilandia podría usar, y que valen para nosotros con una dimensión más.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Pista 1: cosas que aparecen de la nada</h2>
+      <div class="row">
+        <label for="objeto" style="margin:0">Objeto</label>
+        <select id="objeto" style="width:auto"></select>
+        <button id="play" class="primary">Pasar por el plano</button>
+      </div>
+      <label for="t">Posición del objeto <span class="val" id="v-t"></span></label>
+      <input type="range" id="t" min="0" max="1" step="0.005" value="0.5">
+    </section>
+
+    <div class="dos">
+      <section class="card"><h2>Desde afuera <span class="sub">(vista de costado, 3D)</span></h2><canvas id="c-afuera" aria-label="Vista de costado: el objeto atravesando el plano"></canvas></section>
+      <section class="card"><h2>Desde adentro <span class="sub">(el plano visto desde arriba)</span></h2><canvas id="c-adentro" aria-label="Los cortes que ve el ser plano"></canvas></section>
+      <section class="card"><h2>Lo que registra el ser plano</h2><canvas id="c-registro" aria-label="Área total de los cortes a lo largo del tiempo"></canvas>
+        <p class="small muted">Para el ser plano, el área aparece de la nada y desaparece: algo que en su mundo violaría la conservación de la materia.</p></section>
+      <section class="card"><h2>La deducción <span class="sub">(apilando los cortes)</span></h2><canvas id="c-reconstruccion" aria-label="Perfil reconstruido apilando los cortes registrados"></canvas>
+        <p class="small muted" id="txt-volumen"></p></section>
+    </div>
+
+    <section class="card">
+      <h2>Pista 2: una fuerza que "se escapa"</h2>
+      <p class="small muted" style="margin-top:0">Si hay una dimensión extra enrollada de tamaño L, la gravedad se diluye en ella. Lejos (r ≫ L) se ve la ley de siempre; cerca (r ≪ L) la fuerza crece más rápido, como en un mundo con una dimensión más. Midiendo la pendiente se delata la dimensión escondida.</p>
+      <div class="layout">
+        <div>
+          <label for="mundo">Mundo</label>
+          <select id="mundo">
+            <option value="2">Planilandia (2D + 1 escondida)</option>
+            <option value="3" selected>El nuestro (3D + 1 escondida)</option>
+          </select>
+          <label for="L">Tamaño de la dimensión escondida (L) <span class="val" id="v-L"></span></label>
+          <input type="range" id="L" min="-1" max="1" step="0.05" value="0">
+          <div class="stats" style="margin-top:12px">
+            <div class="stat"><div class="k">Pendiente cerca (r = 0,01)</div><div class="v" id="s-cerca">—</div></div>
+            <div class="stat"><div class="k">Pendiente lejos (r = 100)</div><div class="v" id="s-lejos">—</div></div>
+          </div>
+          <p class="small muted" id="txt-ley"></p>
+        </div>
+        <canvas id="c-fuerza" aria-label="Fuerza contra distancia en escala logarítmica"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <footer>Visualización para pensar la idea, no una prueba. Hasta hoy los experimentos no encontraron desviaciones de la gravedad a escalas de decenas de micrómetros ni señales de dimensiones extra en el LHC.</footer>
+
+  <script src="src/grafico.js"></script>
+  <script src="src/pecera.js"></script>
+  <script src="src/app.js"></script>
+</body>
+</html>

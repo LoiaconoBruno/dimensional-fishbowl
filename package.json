@@ -1,0 +1,10 @@
+{
+  "name": "pecera-dimensional",
+  "version": "0.1.0",
+  "description": "Planilandia interactiva: cómo deducir una dimensión extra desde adentro",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test"
+  }
+}
