@@ -1,4 +1,19 @@
-# La pecera dimensional
+<div align="center">
+
+# Dimensional Fishbowl
+
+**La pecera dimensional.** Si viviéramos en una pecera dentro de una dimensión que no vemos, ¿cómo la deduciríamos desde adentro?
+
+[**▶ Probala en vivo**](https://loiaconobruno.github.io/dimensional-fishbowl/) · [Cómo funciona](#cómo-funciona) · [Limitaciones](#limitaciones)
+
+[![Tests](https://github.com/LoiaconoBruno/dimensional-fishbowl/actions/workflows/tests.yml/badge.svg)](https://github.com/LoiaconoBruno/dimensional-fishbowl/actions/workflows/tests.yml)
+![Dependencias: 0](https://img.shields.io/badge/dependencias-0-brightgreen)
+![HTML, CSS y JavaScript](https://img.shields.io/badge/HTML%20%C2%B7%20CSS%20%C2%B7%20JS-sin%20build-f7df1e)
+[![Licencia MIT](https://img.shields.io/badge/licencia-MIT-blue)](LICENSE)
+
+<img src="docs/captura.png" alt="Captura de Dimensional Fishbowl" width="800">
+
+</div>
 
 Página interactiva sobre una pregunta: si nuestro universo fuera una pecera dentro de una dimensión que no vemos, **¿cómo podríamos deducirlo desde adentro?** Muestra dos pistas que un ser de Planilandia (un mundo de 2D) podría usar para deducir la tercera dimensión, y que valen para nosotros con una dimensión más.
 
@@ -8,11 +23,23 @@ La analogía de la pecera es conocida. Lo interesante es la segunda mitad: cómo
 
 ## Instalación
 
-No hace falta instalar nada. Es una página estática sin dependencias. Para correr los tests hace falta Node 18 o más nuevo.
+No hace falta instalar nada: **[abrila en el navegador](https://loiaconobruno.github.io/dimensional-fishbowl/)**.
+
+Para usarla sin conexión o modificarla:
+
+```bash
+git clone https://github.com/LoiaconoBruno/dimensional-fishbowl.git
+```
+
+Después abrí `index.html` con doble clic. No hay dependencias ni paso de build. Para correr los tests hace falta Node 18 o más nuevo:
+
+```bash
+npm test
+```
 
 ## Uso
 
-Abrí `index.html` con doble clic.
+Abrí la [demo en vivo](https://loiaconobruno.github.io/dimensional-fishbowl/) o `index.html` con doble clic.
 
 Ejemplo:
 

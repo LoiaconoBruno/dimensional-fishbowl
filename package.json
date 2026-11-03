@@ -1,10 +1,16 @@
 {
-  "name": "pecera-dimensional",
+  "name": "dimensional-fishbowl",
   "version": "0.1.0",
-  "description": "Planilandia interactiva: cómo deducir una dimensión extra desde adentro",
+  "description": "Cómo deducir una dimensión extra desde adentro: cortes de Planilandia y ley de fuerza con dimensión compacta.",
   "private": true,
   "license": "MIT",
   "scripts": {
     "test": "node --test"
-  }
+  },
+  "homepage": "https://loiaconobruno.github.io/dimensional-fishbowl/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LoiaconoBruno/dimensional-fishbowl.git"
+  },
+  "author": "Bruno Loiacono"
 }
