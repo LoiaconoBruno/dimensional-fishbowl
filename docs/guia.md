@@ -341,7 +341,35 @@ La idea original contemplaba un ensayo o un cuento. La herramienta sirve de anda
 
 En cualquiera de los casos, conviene respetar los números: decir "a menos de 50 micrómetros" en vez de "en un lugar inalcanzable" hace más creíble y más interesante el texto.
 
-### 20. Del modelo al código
+### 20. ¿Tiene bordes nuestra pecera? La forma del universo
+
+La pecera de la idea tiene una dimensión escondida. Hay una pregunta vecina que la cosmología sí investiga con datos: si nuestro espacio de tres dimensiones, sin ninguna dimensión extra, podría estar "cerrado sobre sí mismo", como la pantalla de un videojuego antiguo en el que salir por la derecha te devuelve por la izquierda. Sería una pecera sin vidrio, pero con forma.
+
+#### 20.1 Curvatura y topología
+
+La relatividad general dice cómo se curva el espacio localmente, pero no dice cuál es su forma global, su **topología**. Un espacio plano puede ser infinito o puede ser un **toro** de tres dimensiones: finito, sin bordes, y tal que viajando en línea recta se vuelve al punto de partida. Para un habitante, un universo así se vería como una sala de espejos: las mismas galaxias aparecerían repetidas en distintas direcciones, a distancias que son múltiplos del tamaño del universo. Es la tercera dimensión enrollada de la pista 2, pero sin ninguna dimensión extra: son las tres que conocemos las que se cierran.
+
+#### 20.2 Círculos en el cielo
+
+¿Cómo se detectaría? Neil Cornish, David Spergel y Glenn Starkman propusieron en 1998 (*Classical and Quantum Gravity*, 15(9), 2657–2670) un método elegante. El fondo cósmico de microondas que vemos proviene de una esfera, la superficie de la última dispersión. Si el universo es más chico que esa esfera y se cierra sobre sí mismo, la esfera se corta consigo misma en sus copias, y la intersección de dos esferas es un círculo. Habría entonces pares de **círculos en el cielo** con el mismo patrón de temperaturas, vistos desde dos direcciones distintas. Es, otra vez, la idea de deducir la forma desde adentro, con los cortes de la pista 1 aplicados a una esfera de luz.
+
+#### 20.3 El universo dodecaédrico
+
+En 2003, Jean-Pierre Luminet, Jeffrey Weeks y colaboradores propusieron en *Nature* (425, 593–595) que algunas anomalías del fondo cósmico medido por el satélite WMAP (en particular, que las fluctuaciones de mayor escala angular eran más débiles de lo esperado) podían explicarse si el universo tuviera la forma del **espacio dodecaédrico de Poincaré**: un dodecaedro cuyas caras opuestas están identificadas, de modo que salir por una cara devuelve por la opuesta, girado. Un universo así sería finito y relativamente chico, y su tamaño limitaría las ondas más largas posibles, como el tamaño de un instrumento limita sus notas más graves.
+
+La propuesta era falsable: predecía círculos en el cielo con un patrón determinado. Las búsquedas posteriores no los encontraron.
+
+#### 20.4 Lo que dicen los datos
+
+La colaboración Planck buscó sistemáticamente señales de topología no trivial en sus mapas del fondo cósmico (*Astronomy & Astrophysics*, 594, A18, 2016) y no encontró ninguna. Su conclusión es que, si el universo se cierra sobre sí mismo, su tamaño tiene que ser comparable o mayor que la distancia a la superficie de la última dispersión, unos 14 000 megapársecs en distancia comóvil: lo bastante grande como para que, en la práctica, ninguna repetición sea visible.
+
+Es la misma estructura de resultado que el de las balanzas de torsión de la sección 16: no se encontró el efecto, y la búsqueda pone una cota. Si la pecera existe, ya sea en una dimensión extra o en la forma de las tres conocidas, su "vidrio" está o muy cerca (por debajo de decenas de micrómetros en la dimensión escondida) o muy lejos (más allá del horizonte observable). La región intermedia, la de una pecera que se notaría a simple vista, está descartada.
+
+#### 20.5 Para el cuento
+
+La forma del universo da un recurso narrativo distinto del de la dimensión extra: un personaje que mira con un telescopio cada vez más potente y, en el límite, ve en una dirección la misma galaxia que ve en la opuesta. No necesita salir de la pecera para descubrir que es una pecera: le alcanza con mirar lo bastante lejos. Es el razonamiento de Gauss y Riemann (sección 11) llevado al cosmos, y es la versión de la idea que hoy más se parece a un experimento posible.
+
+### 21. Del modelo al código
 
 | Concepto | Función en `src/pecera.js` | Qué produce en la página |
 |---|---|---|
@@ -362,7 +390,7 @@ P.pendiente(0.01, 3, 1);        // ≈ −3,00
 P.pendiente(100, 3, 1);         // ≈ −2,00
 ```
 
-### 21. Ejercicios
+### 22. Ejercicios
 
 1. Calculá a mano qué ve el habitante del plano cuando un cono con la punta **abajo** lo atraviesa. ¿Cambia el volumen inferido?
 2. Un cubo cruza el plano apoyado sobre un vértice, con la diagonal principal vertical. Dibujá los cortes. ¿En qué momento aparece un hexágono regular?
@@ -372,7 +400,7 @@ P.pendiente(100, 3, 1);         // ≈ −2,00
 6. Leé el argumento de Ehrenfest sobre órbitas en cuatro dimensiones. Con la fuerza 1/r³ y un potencial efectivo que incluya el término centrífugo L²/(2mr²), mostrá que no hay mínimo y que las órbitas circulares son inestables.
 7. Escribí una escena de un cuento en la que un personaje deduce la dimensión extra con la pista 2. ¿Qué instrumento usaría, y qué tendría que blindar?
 
-### 22. Glosario
+### 23. Glosario
 
 - **Corte (sección):** intersección de un objeto con un plano.
 - **Principio de Cavalieri:** dos sólidos con secciones de igual área a cada altura tienen igual volumen.
@@ -383,7 +411,7 @@ P.pendiente(100, 3, 1);         // ≈ −2,00
 - **Torre de Kaluza-Klein:** la serie de partículas de masa creciente que aparecen al cuantizar el movimiento en una dimensión compacta.
 - **Potencial de Yukawa:** corrección exponencial e^(−r/λ) a una ley de potencias.
 
-### 23. Conclusión
+### 24. Conclusión
 
 La pecera dimensional parece una fantasía, pero la pregunta "¿cómo se deduce un afuera desde adentro?" tiene respuestas concretas. Por los cortes: objetos que aparecen, cambian y desaparecen sin causa visible, y cuyos registros, sumados, revelan magnitudes que no se ven, como sabían Arquímedes y Cavalieri y como hace hoy un tomógrafo. Por las fuerzas: una ley de gravedad que cambia de exponente a distancias cortas, como predicen los modelos de Kaluza-Klein, ADD y Randall-Sundrum y como buscan las balanzas de torsión del grupo Eöt-Wash. La primera pista sirve para un cuento; la segunda es un programa de investigación con resultados: si la pecera existe, su dimensión escondida mide menos de unas decenas de micrómetros.
 
@@ -398,6 +426,7 @@ La herramienta deja abiertas dos líneas: agregar la luz que se dobla al cruzar 
 - Burger, D. (1965). *Sphereland: A Fantasy About Curved Spaces and an Expanding Universe* (trad. C. J. Rheinboldt). Thomas Y. Crowell.
 - Candelas, P., Horowitz, G. T., Strominger, A., & Witten, E. (1985). Vacuum configurations for superstrings. *Nuclear Physics B*, 258, 46–74. https://doi.org/10.1016/0550-3213(85)90602-9
 - Cavalieri, B. (1635). *Geometria indivisibilibus continuorum nova quadam ratione promota*. Bolonia: Clemente Ferroni.
+- Cornish, N. J., Spergel, D. N., & Starkman, G. D. (1998). Circles in the sky: Finding topology with the microwave background radiation. *Classical and Quantum Gravity*, 15(9), 2657–2670. https://doi.org/10.1088/0264-9381/15/9/013
 - Dewdney, A. K. (1984). *The Planiverse: Computer Contact with a Two-Dimensional World*. Poseidon Press.
 - Ehrenfest, P. (1917). In what way does it become manifest in the fundamental laws of physics that space has three dimensions? *Proceedings of the Royal Netherlands Academy of Arts and Sciences*, 20, 200–209.
 - Gauss, C. F. (1827). *Disquisitiones generales circa superficies curvas*. Gotinga: Dieterich.
@@ -411,10 +440,12 @@ La herramienta deja abiertas dos líneas: agregar la luz que se dobla al cruzar 
 - Kehagias, A., & Sfetsos, K. (2000). Deviations from the 1/r² Newton law due to extra dimensions. *Physics Letters B*, 472(1–2), 39–44. https://doi.org/10.1016/S0370-2693(99)01421-5
 - Klein, O. (1926). Quantentheorie und fünfdimensionale Relativitätstheorie. *Zeitschrift für Physik*, 37(12), 895–906. https://doi.org/10.1007/BF01397481
 - Lee, J. G., Adelberger, E. G., Cook, T. S., Fleischer, S. M., & Heckel, B. R. (2020). New test of the gravitational 1/r² law at separations down to 52 μm. *Physical Review Letters*, 124(10), 101101. https://doi.org/10.1103/PhysRevLett.124.101101
+- Luminet, J.-P., Weeks, J. R., Riazuelo, A., Lehoucq, R., & Uzan, J.-P. (2003). Dodecahedral space topology as an explanation for weak wide-angle temperature correlations in the cosmic microwave background. *Nature*, 425, 593–595. https://doi.org/10.1038/nature01944
 - Milnor, J. (1963). *Morse Theory*. Princeton University Press. ISBN 978-0-691-08008-6.
 - Minkowski, H. (1909). Raum und Zeit. *Physikalische Zeitschrift*, 10, 104–111.
 - Pardo, K., Fishbach, M., Holz, D. E., & Spergel, D. N. (2018). Limits on the number of spacetime dimensions from GW170817. *Journal of Cosmology and Astroparticle Physics*, 2018(07), 048. https://doi.org/10.1088/1475-7516/2018/07/048
 - Peirce, C. S. (1903). *Harvard Lectures on Pragmatism*. En *The Essential Peirce*, vol. 2 (1998). Indiana University Press.
+- Planck Collaboration. (2016). Planck 2015 results. XVIII. Background geometry and topology of the Universe. *Astronomy & Astrophysics*, 594, A18. https://doi.org/10.1051/0004-6361/201525829
 - Platón. (ca. 375 a. C.). *República*, libro VII.
 - Radon, J. (1917). Über die Bestimmung von Funktionen durch ihre Integralwerte längs gewisser Mannigfaltigkeiten. *Berichte der Sächsischen Akademie der Wissenschaften zu Leipzig, Math.-Phys. Klasse*, 69, 262–277.
 - Randall, L. (2005). *Warped Passages: Unraveling the Mysteries of the Universe's Hidden Dimensions*. Ecco. ISBN 978-0-06-053108-9.
