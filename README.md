@@ -4,7 +4,7 @@
 
 **La pecera dimensional.** Si viviéramos en una pecera dentro de una dimensión que no vemos, ¿cómo la deduciríamos desde adentro?
 
-[**▶ Probala en vivo**](https://loiaconobruno.github.io/dimensional-fishbowl/) · [**📄 Paper y guía**](https://loiaconobruno.github.io/dimensional-fishbowl/guia.html) · [Cómo funciona](#cómo-funciona) · [Limitaciones](#limitaciones)
+[**▶ Probala en vivo**](https://loiaconobruno.github.io/dimensional-fishbowl/) · [**📄 Paper y guía**](https://loiaconobruno.github.io/dimensional-fishbowl-paper/) · [Cómo funciona](#cómo-funciona) · [Limitaciones](#limitaciones)
 
 [![Tests](https://github.com/LoiaconoBruno/dimensional-fishbowl/actions/workflows/tests.yml/badge.svg)](https://github.com/LoiaconoBruno/dimensional-fishbowl/actions/workflows/tests.yml)
 ![Dependencias: 0](https://img.shields.io/badge/dependencias-0-brightgreen)
@@ -80,7 +80,7 @@ npm test
 
 ## Paper de uso y guía
 
-[`guia.html`](https://loiaconobruno.github.io/dimensional-fishbowl/guia.html) (fuente en [`docs/guia.md`](docs/guia.md)) tiene un paper de uso paso a paso y una guía de unas 20 páginas sobre la idea de fondo, con citas a los especialistas del tema.
+El repositorio [`dimensional-fishbowl-paper`](https://github.com/LoiaconoBruno/dimensional-fishbowl-paper) ([leelo en la web](https://loiaconobruno.github.io/dimensional-fishbowl-paper/)) tiene un paper de uso paso a paso y una guía de unas 20 páginas sobre la idea de fondo, con citas a los especialistas del tema.
 
 ## Licencia
 
